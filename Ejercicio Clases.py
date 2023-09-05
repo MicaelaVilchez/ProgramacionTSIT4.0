@@ -97,5 +97,3 @@ class Compra:
         self.medio_pago = medio_pago
         self.monto_total = monto_total
         self.fecha_compra = None  
-
-print(Curso, Categoria)
