@@ -57,8 +57,8 @@ class MedioContacto:
         self.direccion = direccion
         self.nombre = nombre
 
-class TipoMedioContacto(Enum):
-    WhatsApp = "WhatsApp"
-    CorreoElectronico = "Correo electrónico"
-    CallCenter = "Call center"
-    ReferidoInterno = "Referido interno"
+class TipoMedioContacto(MedioContacto):
+    def __init__(self, id_tipo_medio_contacto, nombre_tipo):
+        super().__init__(id_tipo_medio_contacto, fecha=None, email=None, telefono=None, direccion=None, nombre=None)
+        self.id_tipo_medio_contacto = id_tipo_medio_contacto
+        self.nombre_tipo = nombre_tipo
